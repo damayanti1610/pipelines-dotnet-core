@@ -27,7 +27,7 @@ jobs:
       uses: actions/upload-artifact@v3.0.0
       with:
         name: webapp
-        path: downloads
+        path: webapp
   deploy: 
     runs-on: ubuntu-latest
     needs: build 
