@@ -26,3 +26,9 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: action publish
+      uses: eunchurn/action-publish@v1.1.1 
+    - name: Publish
+      run: dotnet publish -c Release -o website  
+      
+      
